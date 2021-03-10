@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: nunito;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.edition-container {
+    position: absolute;
+    right: 10vw;
+    width: 100px;
+    background-color: #062777;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.hero-text-and-logo-container div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12vh;
+    margin-left: 5vw;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.hero-text-container div {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    width: fit-content;
+}
+
+.hero-text-container h1 {
+    font-family: bauhaus;
+    font-size: 13vw;
+    color: #062777;
+    line-height: 200px;
+}
+
+.hero-text-container h3 {
+    font-size: 25px;
+    color: #062777;
+    margin-left: 5px;
+}
+
+#logo {
+    width: 23%;
+    z-index: 1;
+}
+
+#barca-forever {
+    width: 100%;
+    margin-top: -40px;
+}
+
+
+/*Section 2*/
+
+.container>section:nth-of-type(2) {
+    background-image: url(../assets/img/el-classico-gallery-002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: grid;
+    height: 120vh;
+    margin-top: -6px;
+}
+
+.showcase {
+    background-color: #0b2b74dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px 0 50px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen h1 {
+    font-family: bauhaus;
+    font-size: 8vw;
+    letter-spacing: 5px;
+}
+
+.screen p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+
+/*Section 3, Section 4, Section 5*/
+
+.container>section:nth-child(3),
+.container>section:nth-child(4),
+.container>section:nth-child(5) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 8vw;
+}
+
+.container>section:nth-child(4) {
+    padding: 8vw 8vw 8vw 4vw !important;
+}
+
+.container>section:nth-child(5) {
+    padding: 8vw 8vw 8vw 2.5vw !important;
+}
+
+.player-appraisal-container {
+    position: relative;
+}
+
+.player-appraisal-container h1 {
+    font-family: bauhaus;
+    letter-spacing: 5px;
+    font-size: 6vw;
+}
+
+.player-appraisal-container p {
+    margin-bottom: 25px;
+}
+
+.container>section:nth-child(3) {
+    background-color: #c55a11;
+}
+
+.container>section:nth-child(4) {
+    background-color: #2f5597;
+}
+
+.container>section:nth-child(5) {
+    background-color: #222a35;
+}
+
+.player_img_one {
+    width: 100%;
+}
+
+.player_img_two {
+    width: 110%;
+    margin-right: 40px;
+}
+
+.player_img_three {
+    width: 110%;
+}
+
+.bio-one,
+.bio-two,
+.bio-three {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+.bio-one {
+    background-color: #062777;
+}
+
+.bio-one:hover {
+    background-color: #051231;
+    transition: 0.5s;
+}
+
+.bio-two {
+    background-color: #c55a11;
+    transition: 0.5s;
+}
+
+.bio-two:hover {
+    background-color: #8b3f0b;
+}
+
+.bio-three {
+    background-color: #2f5597;
+}
+
+.bio-three:hover {
+    background-color: #1d3257;
+    transition: 0.5s;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #062777;
+    padding: 35px;
+}
