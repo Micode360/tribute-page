@@ -213,3 +213,26 @@ footer {
     background-color: #062777;
     padding: 35px;
 }
+
+@media(max-width:566px) {
+    .hero-text-and-logo-container div:nth-child(1) {
+        margin-top: 4vh;
+        margin-left: 5vw;
+    }
+    .container>section:nth-of-type(2) {
+        height: 80vh;
+    }
+    .container>section:nth-child(3),
+    .container>section:nth-child(4),
+    .container>section:nth-child(5) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 8vw;
+    }
+    footer {
+        text-align: center;
+    }
+}
