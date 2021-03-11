@@ -123,12 +123,10 @@ body {
     padding: 8vw;
 }
 
-.container>section:nth-child(4) {
-    padding: 8vw 8vw 8vw 4vw !important;
-}
-
-.container>section:nth-child(5) {
-    padding: 8vw 8vw 8vw 2.5vw !important;
+.player-image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .player-appraisal-container {
@@ -158,16 +156,15 @@ body {
 }
 
 .player_img_one {
-    width: 100%;
+    width: 60%;
 }
 
 .player_img_two {
-    width: 110%;
-    margin-right: 40px;
+    width: 60%;
 }
 
 .player_img_three {
-    width: 110%;
+    width: 60%;
 }
 
 .bio-one,
@@ -175,7 +172,7 @@ body {
 .bio-three {
     text-decoration: none;
     color: #ffffff;
-    padding: 12px 24px;
+    padding: 12px 44px;
     border-radius: 4px;
 }
 
@@ -234,5 +231,62 @@ footer {
     }
     footer {
         text-align: center;
+    }
+}
+
+@media(max-width:500px) {
+    .player_img_two {
+        margin-right: 0 !important;
+        width: 100%;
+    }
+    .showcase {
+        padding: 0 12px;
+    }
+    .edition-container {
+        position: absolute;
+        right: 5vw;
+        width: 80px;
+        background-color: #062777;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .hero-text-container h1 {
+        font-family: bauhaus;
+        font-size: 13vw;
+        color: #062777;
+        line-height: 100px;
+    }
+    .hero-text-container h3 {
+        width: fit-content;
+    }
+    .player-appraisal-container h1 {
+        letter-spacing: 5px;
+        font-size: 12vw;
+    }
+    .screen h1 {
+        font-family: bauhaus;
+        font-size: 9vw;
+        letter-spacing: 5px;
+    }
+    .screen p {
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+    .container>section:nth-child(3),
+    .container>section:nth-child(4),
+    .container>section:nth-child(5) {
+        padding-bottom: 25vw;
+    }
+    .bio-one,
+    .bio-two,
+    .bio-three {
+        padding: 12px 34px;
+        border-radius: 4px;
+    }
+    .player_img_one,
+    .player_img_two,
+    .player_img_three {
+        width: 60%;
     }
 }
